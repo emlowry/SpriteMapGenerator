@@ -1,0 +1,20 @@
+﻿<!--***************************************************************************
+ * File:               App.xaml
+ * Author:             Elizabeth Lowry
+ * Date Created:       May 5, 2014
+ * Description:        Sprite map generator app.
+ * Last Modified:      May 17, 2014
+ * Last Modification:  Adjusting header comment.
+ ****************************************************************************-->
+<Application x:Class="SpriteMapGenerator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

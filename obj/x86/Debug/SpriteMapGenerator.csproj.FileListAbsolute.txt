@@ -1,0 +1,30 @@
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\bin\Debug\SpriteMapGenerator.exe
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\bin\Debug\SpriteMapGenerator.pdb
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\Resources.baml
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\App.baml
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\MainWindow.g.cs
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\App.g.cs
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator_MarkupCompile.cache
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator_MarkupCompile.lref
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\MainWindow.baml
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.g.resources
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.Properties.Resources.resources
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.csproj.GenerateResource.Cache
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.exe
+U:\Users\emlowry\Dropbox\GitHub\AiE\Year 1 Classwork\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.pdb
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.exe
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.pdb
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\bin\Debug\SpriteMapGenerator.exe
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\bin\Debug\SpriteMapGenerator.pdb
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\Resources.baml
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\App.baml
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\MainWindow.g.cs
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\App.g.cs
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator_MarkupCompile.cache
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator_MarkupCompile.lref
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\MainWindow.baml
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.g.resources
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.Properties.Resources.resources
+U:\Users\emlowry\Dropbox\GitHub\SpriteMapGenerator\obj\x86\Debug\SpriteMapGenerator.csproj.GenerateResource.Cache

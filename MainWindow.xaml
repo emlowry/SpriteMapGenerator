@@ -1,0 +1,99 @@
+﻿<!--***************************************************************************
+ * File:               MainWindow.xaml
+ * Author:             Elizabeth Lowry
+ * Date Created:       May 5, 2014
+ * Description:        Main window for the sprite map generator app.
+ * Last Modified:      May 17, 2014
+ * Last Modification:  Minor tweaks.
+ ****************************************************************************-->
+<Window x:Class="SpriteMapGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SpriteMapGenerator"
+        Title="new - Sprite Map Generator" Height="600" Width="800">
+    <Window.InputBindings>
+        <KeyBinding Key="S" Modifiers="Control+Alt" Command="SaveAs" />
+        <KeyBinding Key="E" Modifiers="Control" Command="{StaticResource Export}" />
+        <KeyBinding Key="I" Modifiers="Control" Command="{StaticResource Import}" />
+        <KeyBinding Key="Insert" Command="{StaticResource Import}" />
+        <KeyBinding Key="A" Modifiers="Control+Shift" Command="{StaticResource SelectNone}" />
+        <KeyBinding Key="A" Modifiers="Control+Alt" Command="{StaticResource SelectInverse}" />
+        <KeyBinding Key="R" Modifiers="Control" Command="{StaticResource Rearrange}" />
+        <KeyBinding Key="F4" Command="{StaticResource Rearrange}" />
+        <KeyBinding Key="R" Modifiers="Control+Alt" Command="{StaticResource AutoArrange}" />
+        <KeyBinding Key="F4" Modifiers="Alt" Command="{StaticResource AutoArrange}" />
+        <KeyBinding Key="R" Modifiers="Control+Shift" Command="{StaticResource ArrangeShapeDown}" />
+        <KeyBinding Key="F4" Modifiers="Shift" Command="{StaticResource ArrangeShapeDown}" />
+        <KeyBinding Key="R" Modifiers="Control+Alt+Shift" Command="{StaticResource ArrangeShapeUp}" />
+        <KeyBinding Key="F4" Modifiers="Shift+Alt" Command="{StaticResource ArrangeShapeUp}" />
+    </Window.InputBindings>
+    <Window.CommandBindings>
+        <CommandBinding Command="New" Executed="CommandBindingNew_Executed" />
+        <CommandBinding Command="Open" Executed="CommandBindingOpen_Executed" />
+        <CommandBinding Command="Save" CanExecute="CommandBindingSave_CanExecute" Executed="CommandBindingSave_Executed" />
+        <CommandBinding Command="SaveAs" Executed="CommandBindingSaveAs_Executed" />
+        <CommandBinding Command="{StaticResource Export}" Executed="CommandBindingExport_Executed" />
+        <CommandBinding Command="{StaticResource Import}" Executed="CommandBindingImport_Executed" />
+        <CommandBinding Command="Cut" CanExecute="CommandBindingCut_CanExecute" Executed="CommandBindingCut_Executed" />
+        <CommandBinding Command="Copy" CanExecute="CommandBindingCopy_CanExecute" Executed="CommandBindingCopy_Executed" />
+        <CommandBinding Command="Paste" CanExecute="CommandBindingPaste_CanExecute" Executed="CommandBindingPaste_Executed" />
+        <CommandBinding Command="Delete" CanExecute="CommandBindingDelete_CanExecute" Executed="CommandBindingDelete_Executed" />
+        <CommandBinding Command="SelectAll" CanExecute="CommandBindingSelectAll_CanExecute" Executed="CommandBindingSelectAll_Executed" />
+        <CommandBinding Command="{StaticResource SelectNone}" CanExecute="CommandBindingSelectNone_CanExecute" Executed="CommandBindingSelectNone_Executed" />
+        <CommandBinding Command="{StaticResource SelectInverse}" CanExecute="CommandBindingSelectInverse_CanExecute" Executed="CommandBindingSelectInverse_Executed" />
+        <CommandBinding Command="{StaticResource Rearrange}" CanExecute="CommandBindingRearrange_CanExecute" Executed="CommandBindingRearrange_Executed" />
+        <CommandBinding Command="{StaticResource AutoArrange}" Executed="CommandBindingAutoArrange_Executed" />
+        <CommandBinding Command="{StaticResource ArrangeShapeDown}" Executed="CommandBindingArrangeShapeDown_Executed" />
+        <CommandBinding Command="{StaticResource ArrangeShapeUp}" Executed="CommandBindingArrangeShapeUp_Executed" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23" MinHeight="23" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu Name="menu" Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Command="New" />
+                <MenuItem Header="_Open..." Command="Open" />
+                <MenuItem Command="Save" />
+                <MenuItem Header="_Save As..." Command="SaveAs" InputGestureText="Ctrl+Alt+S" />
+                <Separator />
+                <MenuItem Header="_Import..."  Command="{StaticResource Import}" InputGestureText="Ctrl+I" />
+                <MenuItem Header="_Export..."  Command="{StaticResource Export}" InputGestureText="Ctrl+E" />
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Paste" />
+                <MenuItem Command="Delete" />
+                <Separator />
+                <MenuItem Command="SelectAll" />
+                <MenuItem Command="{StaticResource SelectNone}" InputGestureText="Ctrl+Shift+A" />
+                <MenuItem Command="{StaticResource SelectInverse}" InputGestureText="Ctrl+Alt+A" />
+            </MenuItem>
+            <MenuItem Header="_Arrange">
+                <MenuItem Command="{StaticResource Rearrange}" InputGestureText="Ctrl+R" />
+                <MenuItem Name="autoArrangeMenuItem" Header="Arrange Automatically" InputGestureText="Ctrl+Alt+R" IsCheckable="True"
+                          IsChecked="{Binding ElementName=sheetCanvas, Path=AutoArrange}" />
+                <Separator />
+                <MenuItem Name="arrangeSquareMenuItem" Header="Square" IsCheckable="True"
+                          IsChecked="{Binding ElementName=sheetCanvas, Path=SquareLayout}" />
+                <MenuItem Name="arrangeTallMenuItem" Header="Vertical Strip" IsCheckable="True"
+                          IsChecked="{Binding ElementName=sheetCanvas, Path=TallLayout}" />
+                <MenuItem Name="arrangeWideMenuItem" Header="Horizontal Strip" IsCheckable="True"
+                          IsChecked="{Binding ElementName=sheetCanvas, Path=WideLayout}" />
+            </MenuItem>
+        </Menu>
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Background="Silver"
+                      MouseMove="CanvasMoveHandler" MouseLeftButtonUp="CanvasLeftButtonUpHandler"
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <Border BorderThickness="1" BorderBrush="Black" Background="{StaticResource TransparencyPattern}"
+                    VerticalAlignment="Top" HorizontalAlignment="Left" >
+                <local:SheetCanvas x:Name="sheetCanvas" InitialWidth="256" InitialHeight="256" />
+            </Border>
+        </ScrollViewer>
+    </Grid>
+</Window>

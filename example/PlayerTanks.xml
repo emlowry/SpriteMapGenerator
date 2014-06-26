@@ -1,0 +1,15 @@
+<sheet src="PlayerTanks.png">
+  <sprite name="sprite 1" x="99" y="0" w="55" h="127" />
+  <sprite name="sprite 2" x="0" y="128" w="99" h="99" />
+  <sprite name="sprite 3" x="0" y="0" w="99" h="128" />
+  <sprite name="sprite 4" x="154" y="83" w="59" h="73" />
+  <sprite name="sprite 5" x="154" y="0" w="59" h="83" />
+  <sprite name="sprite 6" x="154" y="156" w="31" h="61" />
+  <sprite name="sprite 7" x="213" y="0" w="37" h="47" />
+  <sprite name="sprite 8" x="99" y="128" w="37" h="59" />
+  <sprite name="sprite 9" x="213" y="47" w="21" h="47" />
+  <sprite name="sprite 10" x="213" y="137" w="20" h="13" />
+  <sprite name="sprite 11" x="234" y="47" w="16" h="23" />
+  <sprite name="sprite 12" x="213" y="94" w="27" h="43" />
+  <sprite name="sprite 13" x="234" y="70" w="13" h="23" />
+</sheet>
